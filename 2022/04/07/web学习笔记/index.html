@@ -319,6 +319,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/w1024.github-io/2022/04/07/web%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/w1024.github-io/2022/04/07/web%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -446,6 +456,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -633,6 +646,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -667,6 +683,16 @@
   
   
     <script type="text/javascript" src="/w1024.github-io/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/w1024.github-io/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/w1024.github-io/lib/three/canvas_lines.min.js"></script>
   
 
 
@@ -732,6 +758,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'b6AuQSrptDV1MTGFMWkEvv9r-gzGzoHsz',
+        appKey: 'p4iQ3AFz5Brn9BTx9cmkYBdM',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
