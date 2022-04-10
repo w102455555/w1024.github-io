@@ -1952,7 +1952,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3de0ff;
+  background: #f1ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3119,4 +3119,23 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
+}
+body {
+  background: url("https://s1.ax1x.com/2022/04/10/LkrawV.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.content-wrap {
+  opacity: 0.9;
+}
+.sidebar {
+  opacity: 0.9;
+}
+.header-inner {
+  background: rgba(255,255,255,0.9);
+}
+.popup {
+  opacity: 0.2;
 }
